@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0C111B;
+}
+
+#logo {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    /* justify-content: center; */
+    background-color: #121926;
+}
+
+.banner {
+    background-color: #030B17;
+    color: #ffffff;
+    position: relative;
+}
+
+#banner_img {
+    width: 1200px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 36%;
+}
+
+#banner_heading {
+    padding: 40px 0;
+}
+
+#banner_text {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(-90%,-50%);
+    color: #ffffff;
+    /* text-align: left; */
+    width: 600px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+main h2, main p, main h3, img {
+    padding: 10px 10px;
+}
+
+main {
+    background-color: #0C111B;
+    color: white;
+    padding-left: 60px;
+}
+
+.show_cards {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+.CW_Img {
+    width: 400px;
+    transition: transform 0.2s ease-in;
+}
+
+.vertical_img {
+    width: 300px;
+    transition: transform 0.2s ease-in;
+}
+
+.vertical_img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.card_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+    background: rgb(236,231,231);
+background: linear-gradient(180deg, rgba(236,231,231,0) 0%, rgba(25,33,50,0.727328431372549) 18%, rgba(25,33,50,1) 44%, rgba(25,33,50,1) 100%);
+    /* background: rgb(236,231,231);
+    background: linear-gradient(180deg, rgba(236,231,231,0.24087591240875916) 0%, rgba(25,33,50,0.851581508515815) 18%, rgba(25,33,50,1) 44%, rgba(25,33,50,1) 100%); */
+}
+
+.card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.card:hover .card_info {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+}
